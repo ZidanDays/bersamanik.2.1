@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap');
+:root {
+  --main-color: #c62127;
+  --second-color: #2954b2;
+  --body-color: #e6ddd7;
+  --p-color: rgb(43, 43, 43);
+  --p2-color: rgb(255, 255, 255);
+  --main-font: 'Poppins', sans-serif;
+  --navbar-font: 'Inika', serif;
+  --hiding-font: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.img-fluid {
+  margin-top: 11vh;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -450px;
+  background-color: var(--second-color);
+  padding-top: 20px;
+  color: white;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.5s;
+  padding-left: 3vh;
+  font-size: var(--main-font);
+}
+
+.sidebar a:hover {
+  background-color: var(--main-color);
+}
+
+.sidebar-btn {
+  padding-left: 2vh !important;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.content {
+  margin-left: 0;
+  padding: 10vh;
+  transition: 0.5s;
+}
+
+.navbar {
+  background-color: var(--second-color);
+  padding: px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Menetapkan z-index agar navbar berada di depan elemen lain */
+}
+.navbar-title {
+  flex-grow: 1;
+  margin-left: 10px;
+  font-size: var(--main-font);
+}
+
+.footer {
+  background-color: var(--second-color);
+  font-family: var(--main-font);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-right: 8vh;
+  font-size: 12px;
+}
+
+.default-image-size {
+  width: 50px; /* Sesuaikan dengan lebar yang diinginkan */
+  height: 50px; /* Sesuaikan dengan tinggi yang diinginkan */
+}
+
+/* Stil tambahan untuk menyusun elemen secara horizontal */
+.d-flex {
+  display: flex;
+}
+
+/* Mengatur jarak margin kanan */
+.mr-3 {
+  margin-right: 15px; /* Sesuaikan dengan jarak yang diinginkan */
+}
+
+/* Mengatur margin dan padding nol */
+.m-1 {
+  padding-top: 12vh;
+  text-align: left;
+}
+.tagp {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding-left: 0.7vh;
+}
+.align-items-center {
+  padding-left: 3vh !important;
+}
+
+.icon-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding-top: 15vh !important;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.menu-icon {
+  padding-right: 3vh;
+}
+
+.btn-edit {
+  padding: 7px 20px;
+  border-radius: 20px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  transition: 0.5s;
+  background-color: var(--second-color);
+}
+.btn-simpan {
+  border-radius: 15px;
+  padding: 9px 20px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  transition: 0.5s;
+  background-color: var(--second-color);
+  margin-left: 15px;
+}
+.btn-simpan:hover {
+  border-radius: 15px;
+  padding: 9px 30px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  transition: 0.5s;
+  background-color: #03205e;
+}
+.btn-tambah {
+  border-radius: 15px;
+  padding: 9px 20px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  transition: 0.5s;
+  background-color: #006400;
+}
+.btn-tambah:hover {
+  border-radius: 15px;
+  padding: 9px 25px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  transition: 0.5s;
+  background-color: #05e205;
+  border-color: #05e205;
+}
+.btn-simpan1 {
+  border-radius: 15px;
+  padding: 7px 15px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  transition: 0.5s;
+  background-color: var(--second-color);
+}
+.btn-simpan1:hover {
+  border-radius: 15px;
+  padding: 7px 25px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  transition: 0.5s;
+  background-color: #03205e;
+}
+.btn-delete {
+  border-radius: 20px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  transition: 0.5s;
+  background-color: var(--main-color);
+}
+.btn-tutup {
+  border-radius: 15px;
+  font-family: var(--main-font);
+  padding: 7px 20px;
+  font-size: 15px;
+  transition: 0.5s;
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.btn-tutup:hover {
+  border-radius: 15px;
+  padding: 7px 25px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  transition: 0.5s;
+  background-color: #640d10;
+  border-color: #640d10;
+}
+.btn-edit:hover {
+  border-radius: 20px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  background-color: #3070f9;
+}
+.btn-delete:hover {
+  border-radius: 20px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  background-color: #ee2930;
+}
+
+/* responsif */
+@media (max-width: 468px) {
+  .footer {
+    font-size: 10px;
+  }
+}
+/* end responsif */
+
+.list-group a {
+  border-bottom: 2px solid #ffffff; /* Warna garis pemisah */
+}
